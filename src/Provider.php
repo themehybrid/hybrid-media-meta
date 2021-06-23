@@ -23,7 +23,7 @@ use Hybrid\Tools\ServiceProvider;
  * @since  1.0.0
  * @access public
  */
-class MetaServiceProvider extends ServiceProvider {
+class Provider extends ServiceProvider {
 
 	/**
 	 * Registration callback that adds a single instance of the media meta
@@ -36,7 +36,6 @@ class MetaServiceProvider extends ServiceProvider {
 	public function register() {
 
 		$this->app->singleton( 'media/meta', function( $container ) {
-
 			return new Collection();
 		} );
 	}

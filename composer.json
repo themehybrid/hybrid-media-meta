@@ -29,5 +29,6 @@
                 "themehybrid/hybrid-core"       : "6.*",
 		"themehybrid/hybrid-contracts"  : "dev-master",
 		"themehybrid/hybrid-tools"      : "dev-master"
-	}
+	},
+	"minimum-stability": "dev"
 }

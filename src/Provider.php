@@ -14,8 +14,8 @@
 
 namespace Hybrid\Media\Meta;
 
+use Hybrid\Core\ServiceProvider;
 use Hybrid\Tools\Collection;
-use Hybrid\Tools\ServiceProvider;
 
 /**
  * Media meta provider class.

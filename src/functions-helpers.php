@@ -116,7 +116,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\repo' ) ) {
 		$repositories = App::resolve( 'media/meta' );
 
 		if ( ! $repositories->has( $post_id ) ) {
-
 			$repositories[ $post_id ] = new Meta( $post_id );
 		}
 

@@ -228,7 +228,6 @@ class Meta implements MetaContract {
 		}
 
 		if ( $filesize ) {
-
 			$filesize = size_format( strip_tags( $filesize ), 2 );
 		}
 
@@ -247,7 +246,6 @@ class Meta implements MetaContract {
 		$type = '';
 
 		if ( preg_match( '/^.*?\.(\w+)$/', get_attached_file( $this->post->ID ), $matches ) ) {
-
 			$type = $matches[1];
 		}
 

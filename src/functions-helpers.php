@@ -120,6 +120,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\repo' ) ) {
 			$repositories[ $post_id ] = new Meta( $post_id );
 		}
 
-		return $repositories[ $post_id ];
+		return $repositories->get( $post_id );
 	}
 }

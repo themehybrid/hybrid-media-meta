@@ -4,16 +4,17 @@
  *
  * Helper functions and template tags related to media metadata.
  *
- * @package   HybridCore
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright Copyright (c) 2008 - 2021, Justin Tadlock
- * @link      https://themehybrid.com/hybrid-core
+ * @package   HybridMediaMeta
+ * @link      https://github.com/themehybrid/hybrid-media-meta
+ *
+ * @author    Theme Hybrid
+ * @copyright Copyright (c) 2008 - 2023, Theme Hybrid
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 namespace Hybrid\Media\Meta;
 
-use Hybrid\Proxies\App;
+use Hybrid\App;
 
 if ( ! function_exists( __NAMESPACE__ . '\\display' ) ) {
 	/**
@@ -119,6 +120,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\repo' ) ) {
 			$repositories[ $post_id ] = new Meta( $post_id );
 		}
 
-		return $repositories[ $post_id ];
+		return $repositories->get( $post_id );
 	}
 }

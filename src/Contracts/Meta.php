@@ -18,17 +18,20 @@ namespace Hybrid\Media\Meta\Contracts;
  * Media meta interface.
  *
  * @since  1.0.0
+ *
  * @access public
  */
 interface Meta {
 
-	/**
-	 * Returns the escaped and formatted media meta.
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @param  string  $key
-	 * @return mixed
-	 */
-	public function get( $key );
+    /**
+     * Returns the escaped and formatted media meta.
+     *
+     * @since  1.0.0
+     * @param  string $key
+     * @return mixed
+     *
+     * @access public
+     */
+    public function get( $key );
+
 }

@@ -22,22 +22,23 @@ use Hybrid\Tools\Collection;
  * Media meta provider class.
  *
  * @since  1.0.0
+ *
  * @access public
  */
 class Provider extends ServiceProvider {
 
-	/**
-	 * Registration callback that adds a single instance of the media meta
-	 * collection to the container.
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @return void
-	 */
-	public function register() {
+    /**
+     * Registration callback that adds a single instance of the media meta
+     * collection to the container.
+     *
+     * @since  1.0.0
+     * @return void
+     *
+     * @access public
+     */
+    public function register() {
 
-		$this->app->singleton( 'media/meta', function( $container ) {
-			return new Collection();
-		} );
-	}
+        $this->app->singleton( 'media/meta', static fn( $container ) => new Collection() );
+    }
+
 }

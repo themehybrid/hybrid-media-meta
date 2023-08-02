@@ -9,7 +9,7 @@
  *
  * @author    Theme Hybrid
  * @copyright Copyright (c) 2008 - 2023, Theme Hybrid
- * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @license   https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 namespace Hybrid\Media\Meta\Contracts;
@@ -18,17 +18,20 @@ namespace Hybrid\Media\Meta\Contracts;
  * Media meta interface.
  *
  * @since  1.0.0
+ *
  * @access public
  */
 interface Meta {
 
-	/**
-	 * Returns the escaped and formatted media meta.
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @param  string  $key
-	 * @return mixed
-	 */
-	public function get( $key );
+    /**
+     * Returns the escaped and formatted media meta.
+     *
+     * @since  1.0.0
+     * @param  string $key
+     * @return mixed
+     *
+     * @access public
+     */
+    public function get( $key );
+
 }

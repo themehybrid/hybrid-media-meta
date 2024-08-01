@@ -11,7 +11,7 @@
  * @link      https://github.com/themehybrid/hybrid-media-meta
  *
  * @author    Theme Hybrid
- * @copyright Copyright (c) 2008 - 2023, Theme Hybrid
+ * @copyright Copyright (c) 2008 - 2024, Theme Hybrid
  * @license   https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -21,41 +21,28 @@ use Hybrid\Media\Meta\Contracts\Meta as MetaContract;
 
 /**
  * Media meta class.
- *
- * @since  1.0.0
- *
- * @access public
  */
 class Meta implements MetaContract {
 
     /**
      * The attachment post object.
      *
-     * @since  1.0.0
-     * @var    \WP_Post
-     *
-     * @access protected
+     * @var \WP_Post
      */
     protected $post = null;
 
     /**
      * Copy of attachment meta retrieved via `wp_get_attachment_metadata()`.
      *
-     * @since  1.0.0
-     * @var    array
-     *
-     * @access protected
+     * @var array
      */
     protected $meta = [];
 
     /**
      * Sets up the new media meta object.
      *
-     * @since  1.0.0
      * @param  \WP_Post|int  A post object or ID.
      * @return void
-     *
-     * @access public
      */
     public function __construct( $post ) {
 
@@ -66,11 +53,8 @@ class Meta implements MetaContract {
     /**
      * Returns the escaped and formatted media meta.
      *
-     * @since  1.0.0
-     * @param  string $key
+     * @param string $key
      * @return string
-     *
-     * @access public
      */
     public function get( $key ) {
 
@@ -93,11 +77,8 @@ class Meta implements MetaContract {
     /**
      * Returns raw data from the media meta.
      *
-     * @since  1.0.0
-     * @param  string $key
+     * @param string $key
      * @return mixed
-     *
-     * @access protected
      */
     protected function raw( $key ) {
 
@@ -125,10 +106,7 @@ class Meta implements MetaContract {
     /**
      * Returns the camera aperture for an image.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function aperture() {
 
@@ -148,10 +126,7 @@ class Meta implements MetaContract {
     /**
      * Returns the created timestamp for an image.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function createdTimestamp() {
 
@@ -171,10 +146,7 @@ class Meta implements MetaContract {
     /**
      * Returns the media dimensions (width/height).
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function dimensions() {
 
@@ -198,10 +170,7 @@ class Meta implements MetaContract {
     /**
      * Returns the media file name, linked to the original media file.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function fileName() {
 
@@ -222,10 +191,7 @@ class Meta implements MetaContract {
     /**
      * Returns the media file size.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function fileSize() {
 
@@ -249,10 +215,7 @@ class Meta implements MetaContract {
     /**
      * Returns the media file type.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function fileType() {
 
@@ -268,10 +231,7 @@ class Meta implements MetaContract {
     /**
      * Returns the camera focal length for an image.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function focalLength() {
 
@@ -292,10 +252,7 @@ class Meta implements MetaContract {
     /**
      * Returns the lyrics for an audio file.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function lyrics() {
 
@@ -323,10 +280,7 @@ class Meta implements MetaContract {
     /**
      * Returns the media file mime type.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function mimeType() {
 
@@ -342,10 +296,7 @@ class Meta implements MetaContract {
     /**
      * Returns the camera shutter speed for an image.
      *
-     * @since  1.0.0
      * @return string
-     *
-     * @access protected
      */
     protected function shutterSpeed() {
 

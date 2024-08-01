@@ -9,7 +9,7 @@
  * @link      https://github.com/themehybrid/hybrid-media-meta
  *
  * @author    Theme Hybrid
- * @copyright Copyright (c) 2008 - 2023, Theme Hybrid
+ * @copyright Copyright (c) 2008 - 2024, Theme Hybrid
  * @license   https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -20,10 +20,6 @@ use Hybrid\Tools\Collection;
 
 /**
  * Media meta provider class.
- *
- * @since  1.0.0
- *
- * @access public
  */
 class Provider extends ServiceProvider {
 
@@ -31,10 +27,7 @@ class Provider extends ServiceProvider {
      * Registration callback that adds a single instance of the media meta
      * collection to the container.
      *
-     * @since  1.0.0
      * @return void
-     *
-     * @access public
      */
     public function register() {
 

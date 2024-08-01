@@ -8,7 +8,7 @@
  * @link      https://github.com/themehybrid/hybrid-media-meta
  *
  * @author    Theme Hybrid
- * @copyright Copyright (c) 2008 - 2023, Theme Hybrid
+ * @copyright Copyright (c) 2008 - 2024, Theme Hybrid
  * @license   https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -20,12 +20,9 @@ if ( ! function_exists( __NAMESPACE__ . '\\display' ) ) {
     /**
      * Prints media meta directly to the screen.
      *
-     * @since  1.0.0
-     * @param  string $property
-     * @param  array  $args
+     * @param string $property
+     * @param array  $args
      * @return void
-     *
-     * @access public
      */
     function display( $property, $args = [] ) {
         echo render( $property, $args );
@@ -36,12 +33,9 @@ if ( ! function_exists( __NAMESPACE__ . '\\render' ) ) {
     /**
      * Returns media meta from a media meta object.
      *
-     * @since  1.0.0
-     * @param  string $property
-     * @param  array  $args
+     * @param string $property
+     * @param array  $args
      * @return string
-     *
-     * @access public
      */
     function render( $property, array $args = [] ) {
 
@@ -109,11 +103,8 @@ if ( ! function_exists( __NAMESPACE__ . '\\repo' ) ) {
     /**
      * Returns an instance of a media meta repository based on the attachment ID.
      *
-     * @since  1.0.0
-     * @param  int $post_id
+     * @param int $post_id
      * @return \Hybrid\Media\Meta\Meta
-     *
-     * @access public
      */
     function repo( $post_id ) {
 
